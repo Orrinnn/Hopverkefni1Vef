@@ -91,3 +91,209 @@ form button {
   padding: calc(var(--spacing) * 0.25);
   border-radius: var(--border-radius);
 }
+
+
+
+
+
+/* HEADER!!!! */
+header {
+  background-color: var(--color-white);
+  color: var(--color-black);
+  text-align: center;
+  padding: var(--padding-mini);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+}
+
+/* Style the logo and title */
+.header-content {
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+}
+
+/* Style the logo */
+.header-content img {
+  width: 30%; /* Use a percentage for image width */
+  max-width: none; /* Set a maximum width for the image */
+}
+
+/* Style the title */
+.header-content h1 {
+  font-family: var(--main-heading);
+  font-size: 2.5em; /* Use relative units like em or rem for font size */
+  margin: 0;
+}
+
+/* Style the navigation menu (adjust as needed) */
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: var(--gap-mini);
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--color-black); /* Set menu item text color to black */
+}
+
+nav ul li:hover {
+  text-decoration: underline; /* Add an underline on hover */
+  color: #000000; /* Change text color to red on hover */
+}
+
+/* Style the search bar container */
+.search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style the search input field */
+.search-input {
+  width: 80%; /* Adjust the width as needed */
+  padding: 20px; /* Increase padding for a bigger search bar */
+  background-image: url('../image/leit.svg');
+  background-size: 20px;
+  background-position: right center;
+  background-position-x: calc(100% - 5px);
+  background-repeat: no-repeat;
+}
+
+.search-bar2.0 {
+  display: none;
+}
+
+/* Hide the button on larger screens */
+#mobile-menu-button {
+  display: none;
+}
+
+/* Style the dropdown menu */
+#mobile-menu {
+  display: none;
+  background-color: var(--color-white);
+  padding: 15px;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the dropdown menu items as a horizontal navigation bar */
+#mobile-menu ul {
+  list-style: none;
+  padding: 0;
+
+  justify-content: space-around;
+}
+
+#mobile-menu ul li {
+  margin-bottom: 20px;
+  text-align: center;
+  display: block;
+}
+
+#mobile-menu ul li a {
+  text-decoration: none;
+  flex-direction: column; /* Stack list items vertically */
+  align-items: center; /* Center items horizontally */color: var(--color-black);
+  font-size: 3em; /* Adjust the font size */
+}
+
+#mobile-menu ul li:hover {
+  text-decoration: underline; /* Add an underline on hover */
+  color: #000000; /* Change text color to red on hover */
+}
+
+/* Customize mobile header styles */
+@media only screen and (max-width: 768px) {
+  .header-content img {
+    width: 30%;
+    max-width: 30px; /* Adjust the maximum image width for mobile */
+  }
+  .header-content h1 {
+    font-size: 1.5em; /* Adjust the font size for mobile */
+  }
+  #mobile-menu-button {
+    display: inline-block;
+    cursor: pointer;
+    border: none;
+    background-color: var(--color-white);
+    font-size: 1.5em;
+  }
+  nav ul {
+    display: none;
+  }
+  .search-bar {
+    display: none;
+  }
+  .search-bar2.0 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* Display the mobile menu when the button is clicked */
+#mobile-menu.visible {
+  display: block;
+}
+}
+
+
+
+
+
+
+
+
+/* FOOTER!!!!!! */
+
+.footer {
+  background-color: #3c2a1e;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  font-family: var(--font-lora);
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: row; /* Arrange columns horizontally */
+  justify-content: space-around; /* Add space between columns */
+}
+
+.footer h3 {
+  font-size: 30px; /* Adjust the font size as needed */
+  border-bottom: 2px solid #e1cec2;
+}
+
+.footer-column {
+  text-align: left;
+  padding: 10px;
+}
+
+.footer-copyright {
+  margin-top: 20px; /* Adjust the margin to position it at the bottom */
+  border-top:2px solid #682d2d;
+}
+
+/* Responsive layout for mobile */
+@media screen and (max-width: 768px) {
+  .footer-content {
+    flex-direction: column; /* Arrange columns vertically on mobile devices */
+  }
+
+  .footer-column {
+    text-align: left;
+  }
+}
