@@ -16,7 +16,7 @@ Til að skoða og keyra verkefnið á tækinu þínu:
   Tómas Andri Bjartsson - tab9@hi.is - tomasandri99
 
   Alexander Knudsen - aok12@hi.is - Alexander-Knudsen
-  
+
   
   # Uppbygging
 
@@ -34,5 +34,3 @@ Til að skoða og keyra verkefnið á tækinu þínu:
   Varadesktop: með því að nota takkana sem eru sem kallast "setja í körfu"
 
   Forsíða: alltaf upp í header í title-inu
-
-  
