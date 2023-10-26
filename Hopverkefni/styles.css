@@ -300,6 +300,19 @@ nav ul li:hover {
 
 
 
+/* FORSÍÐAN */
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.for {
+  align-text: center;
+}
+
+
+
 
 
 /* VÖRULISTI */
@@ -577,4 +590,3 @@ nav ul li:hover {
   font-size: 18px;
   font-weight: lighter;
 }
-
