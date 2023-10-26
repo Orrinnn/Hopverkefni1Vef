@@ -1,27 +1,241 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="is">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your HTML Document</title>
-    <link rel="stylesheet" href="Vorulisti.css">
-    <script src="script.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  
-  <div class="custom-container">
+    <header>
+   <div class="header-content">
+     <img src="../image/logo.svg" alt="Pontunarsida Logo">
+     <h1>Tæknibúðin</h1>
+   </div>
+   <div class="search-bar">
+     <input type="text" placeholder="Leit eftir heiti, vörunúmeri, lýsingu o.fl." class="search-input">
+   </div>
+   <nav>
+       <ul>
+         <li><a href="#">Nýjar vörur</a></li>
+         <li><a href="#">Tilboðs vörur</a></li>
+         <li><a href="#">Allar vörur</a></li>
+       </ul>
+     </nav>
+   <div id="mobile-menu" class="hidden">
+       <ul>
+           <li><a href="#">Nýjar vörur</a></li>
+           <li><a href="#">Tilboðs vörur</a></li>
+           <li><a href="#">Allar vörur</a></li>
+         </ul>          
+     <div class="search-bar2.0">
+       <input type="text" placeholder="Leit eftir heiti, vörunúmeri, lýsingu o.fl." class="search-input">
+     </div>
+   </div>
+   <div class="header-cart">
+     <img src="../image/karfa.svg" alt="Pontunarsida Logo">
+   </div>
+   <button id="mobile-menu-button">☰</button> <!-- Button to toggle the mobile menu -->
+ </header>
+
+ <script>
+   // Get references to the button and the mobile menu
+const mobileMenuButton = document.getElementById("mobile-menu-button");
+const mobileMenu = document.getElementById("mobile-menu");
+
+// Add a click event listener to the button
+mobileMenuButton.addEventListener("click", function() {
+ // Check if the mobile menu is currently visible
+ if (mobileMenu.classList.contains("visible")) {
+   // If it's visible, hide it by removing the "visible" class
+   mobileMenu.classList.remove("visible");
+ } else {
+   // If it's not visible, show it by adding the "visible" class
+   mobileMenu.classList.add("visible");
+ }
+});
+ </script>
+
+
+<div class="Vorurnar">
     <h1>Nýjar vörur</h1>
-    <div class="secondary-heading-container">
-        <h2>Raða eftir:</h2>
-    </div>
+    <h2>Raða eftir:</h2>
     <div class="filter-container">
         <button onclick="filterByContent('Heiti')">Heiti</button>
         <button onclick="filterByContent('Lægsta verði')">Lægsta verði</button>
         <button onclick="filterByContent('Hæsta verði')">Hæsta verði</button>
         <button onclick="filterByContent('Vinsældum')">Vinsældum</button>
         <button onclick="filterByContent('Afslætti')">Afslætti</button>
-        <button onclick="resetFilter()">Reset</button>
     </div>
-    
-  
+</div>
+
+
+
+
+<main>
+    <div class="product-grid">
+      <!-- Product box 1 -->
+      <div class="product-box">
+        <img src="../image/Robot.png" alt="Vara Image">
+        <h3>Vinalegur vinnuróbot</h3>
+        <button>Nýtt</button>
+        <button>Ekki fyrir börn</button>
+        <p>1.499.990 kr.</p>
+        <button class="setja-i-korfu-button">Setja í körfu</button>
+      </div>
+
+      <!-- Product box 2 -->
+      <div class="product-box">
+        <img src="../image/Bord.png" alt="Vara Image">
+        <h3>Tæknilegt móðurborð</h3>
+        <button>Nýtt</button>
+        <button>Takmarkað magn</button>
+        <p>189.000 kr.</p>
+        <button class="setja-i-korfu-button">Setja í körfu</button>
+      </div>
+
+      <!-- Product box 3 -->
+      <div class="product-box">
+        <img src="../image/Code.png" alt="Vara Image">
+        <h3>Matrixið</h3>
+        <button>Nýtt</button>
+        <button>Ekki fyrir róbota</button>
+        <p>299.999.999.499.990 kr.</p>
+        <button class="setja-i-korfu-button">Setja í körfu</button>
+      </div>
+
+      <!-- Product box 4 -->
+      <div class="product-box">
+        <img src="../image/Robot.png" alt="Vara Image">
+        <h3>Vinalegur vinnuróbot</h3>
+        <button>Nýtt</button>
+        <button>Ekki fyrir börn</button>
+        <p>1.499.990 kr.</p>
+        <button class="setja-i-korfu-button">Setja í körfu</button>
+      </div>
+
+      <!-- Product box 5 -->
+      <div class="product-box">
+        <img src="../image/Bord.png" alt="Vara Image">
+        <h3>Tæknilegt móðurborð</h3>
+        <button>Nýtt</button>
+        <button>Takmarkað magn</button>
+        <p>189.000 kr.</p>
+        <button class="setja-i-korfu-button">Setja í körfu</button>
+      </div>
+
+      <!-- Product box 6 -->
+      <div class="product-box">
+        <img src="../image/Robot.png" alt="Vara Image">
+        <h3>Vinalegur vinnuróbot</h3>
+        <button>Nýtt</button>
+        <button>Ekki fyrir börn</button>
+        <p>1.499.990 kr.</p>
+        <button class="setja-i-korfu-button">Setja í körfu</button>
+      </div>
+
+      <!-- Product box 7 -->
+      <div class="product-box">
+        <img src="../image/Code.png" alt="Vara Image">
+        <h3>Matrixið</h3>
+        <button>Nýtt</button>
+        <button>Ekki fyrir róbota</button>
+        <p>299.999.999.499.990 kr.</p>
+        <button class="setja-i-korfu-button">Setja í körfu</button>
+      </div>
+
+      <!-- Product box 8 -->
+      <div class="product-box">
+        <img src="../image/Robot.png" alt="Vara Image">
+        <h3>Vinalegur vinnuróbot</h3>
+        <button>Nýtt</button>
+        <button>Ekki fyrir börn</button>
+        <p>1.499.990 kr.</p>
+        <button class="setja-i-korfu-button">Setja í körfu</button>
+      </div>
+
+      <!-- Product box 9 -->
+      <div class="product-box">
+        <img src="../image/Robot.png" alt="Vara Image">
+        <h3>Vinalegur vinnuróbot</h3>
+        <button>Nýtt</button>
+        <button>Ekki fyrir börn</button>
+        <p>1.499.990 kr.</p>
+        <button class="setja-i-korfu-button">Setja í körfu</button>
+      </div>
+
+      <!-- Product box 10 -->
+      <div class="product-box">
+        <img src="../image/Bord.png" alt="Vara Image">
+        <h3>Tæknilegt móðurborð</h3>
+        <button>Nýtt</button>
+        <button>Takmarkað magn</button>
+        <p>189.000 kr.</p>
+        <button class="setja-i-korfu-button">Setja í körfu</button>
+      </div>
+
+      <!-- Product box 11 -->
+      <div class="product-box">
+        <img src="../image/Robot.png" alt="Vara Image">
+        <h3>Vinalegur vinnuróbot</h3>
+        <button>Nýtt</button>
+        <button>Ekki fyrir börn</button>
+        <p>1.499.990 kr.</p>
+        <button class="setja-i-korfu-button">Setja í körfu</button>
+      </div>
+
+      <!-- Product box 12 -->
+      <div class="product-box">
+        <img src="../image/Code.png" alt="Vara Image">
+        <h3>Matrixið</h3>
+        <button>Nýtt</button>
+        <button>Ekki fyrir róbota</button>
+        <p>299.999.999.499.990 kr.</p>
+        <button class="setja-i-korfu-button">Setja í körfu</button>
+      </div>
+
+    </div>
+  </main>
+
+
+
+
+
+
+
+
+
+
+<footer class="footer">
+    <div class="footer">
+        <div class="footer-content">
+          <div class="footer-column">
+            <h3>OPNUNARTÍMI</h3>
+            <p>Opið alla virka daga frá 9:00–18:00</p>
+            <p>Opið á laugardögum frá 12:00–16:00</p>
+            <p>Lokað á sunnudögum</p>
+          </div>
+          <div class="footer-column">
+            <h3>HAFÐU SAMBAND</h3>
+            <p>Skiptiborð: 234–4568</p>
+            <p>Tölvupóstur: thjonusta@example.org</p>
+          </div>
+          <div class="footer-column">
+            <h3>ANNAÐ</h3>
+            <p>Rekja sendingu</p>
+            <p>Skilaréttur</p>
+            <p>Um okkur</p>
+            <p>Störf</p>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <p>&copy; 2023 TÆKNIBÚÐIN — Allur réttur áskilinn</p>
+        </div>
+      </div>      
+  </footer>
+
+
 </body>
 </html>
