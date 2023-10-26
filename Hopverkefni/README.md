@@ -9,11 +9,14 @@ Til að skoða og keyra verkefnið á tækinu þínu:
 
 
   # Hópmeðlimir
-  nafn.....................email.........github
   Patrekur Orri Guðjónsson - pog5@hi.is - Orrinnn
+
   Aron Bjartur Hilmarsson - abh41@hi.is - aronbjartur
+
   Tómas Andri Bjartsson - tab9@hi.is - tomasandri99
+
   Alexander Knudsen - aok12@hi.is - Alexander-Knudsen
+  
   
   # Uppbygging
 
@@ -25,8 +28,11 @@ Til að skoða og keyra verkefnið á tækinu þínu:
   Til að flakka milli síða:
 
   Vorulisit: alltaf upp í headernum og á forsíðu eru tveir takkar sem taka mann þangað
+
   Pontunarsida: alltaf í headernum með því að ýta á cart iconið
+
   Varadesktop: með því að nota takkana sem eru sem kallast "setja í körfu"
+
   Forsíða: alltaf upp í header í title-inu
 
   
