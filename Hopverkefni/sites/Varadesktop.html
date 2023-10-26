@@ -12,7 +12,17 @@
      <header>
     <div class="header-content">
       <img src="../image/logo.svg" alt="Pontunarsida Logo">
-      <h1><a href="../index.html">Tæknibúðin</a></h1>
+      <style>
+        a.noUnderline {
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        a.noUnderline:visited {
+            color: inherit;
+        }
+        </style>
+      <h1><a href="../index.html" class="noUnderline">Tæknibúðin</a></h1>
     </div>
     <div class="search-bar">
       <input type="text" placeholder="Leit eftir heiti, vörunúmeri, lýsingu o.fl." class="search-input">
