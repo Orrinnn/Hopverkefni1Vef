@@ -402,6 +402,96 @@ nav ul li:hover {
 
 
 
+/* VARA-DESKTOP */
+
+.tags8{overflow:hidden;display:flex;flex-direction:row;align-items:flex-start;justify-content:flex-start;position:absolute;top:91px;left:734px;width:300px;height:39px;gap:var(--gap-3xs);font-size:var(--body-size)
+
+}
+.new16{overflow:hidden;display:flex;flex-direction:row;align-items:flex-start;justify-content:flex-start;border-radius:var(--br-8xs);background-color:var(--color-lightgray);padding:var(--padding-8xs)
+}
+.ntt8{position:relative;line-height:24px}
+.afskaplega-gott-tknilegt,.kr19{position:absolute;top:153px;left:735px;line-height:32px;display:inline-block;width:685px;height:234px}
+.mjg-gar-murborslegar{margin:0;font-size:var(--large-body-size);line-height:32px}
+.a1234-kubbasett-fyrir{line-height:32px}
+.button11,.price8{position:absolute;width:330px;overflow:hidden}
+.price8{top:399px;left:735px;height:39px}
+.button11{top:397px;left:1095px;border-radius:var(--br-8xs);background-color:var(--color-gray-100);border:1px solid var(--color-dimgray);box-sizing:border-box;display:flex;flex-direction:row;align-items:center;justify-content:space-between;padding:var(--padding-3xs) var(--padding-mini);font-size:var(--small-size);color:var(--black-coffee)}
+
+.product-details{align-self:stretch;overflow:hidden;display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start;padding:var(--padding-41xl) 255px}
+
+.eiginleikar-kubbasett-a1234-ku-container{position:relative;display:inline-block;width:930px}
+
+.eiginleikar{margin:0;font-size:var(--main-heading-size)}
+
+.kubbasett{line-height:48px}
+
+.a1234-kubbasett-fyrir{line-height:32px}
+
+.kubbasett-a1234-kubbasett-fyri{margin:0;font-size:var(--large-body-size)}
+
+.related-products{align-self:stretch;position:relative;height:495px;overflow:hidden;flex-shrink:0;font-size:var(--small-size)}
+
+.background-icon3{position:absolute;top:0;left:0;width:1440px;height:1114px}
+
+.product-content{align-self:stretch;position:relative;height:486px;overflow:hidden;flex-shrink:0;font-size:var(--large-body-size)}
+
+.products3{overflow:hidden;display:flex;flex-direction:row;align-items:flex-start;justify-content:flex-start;padding:0 var(--padding-mini);gap:var(--gap-11xl)}
+
+.product-card{border-radius:var(--br-8xs);overflow:hidden;display:flex;align-items:center;justify-content:space-between;background-color:var(--color-white);width:330px;height:360px;flex-shrink:0;flex-direction:column;padding:var(--padding-mini);box-sizing:border-box
+}
+.product-image{align-self:stretch;height:160px;overflow:hidden;flex-shrink:0;display:flex;flex-direction:column;align-items:center;justify-content:space-between;padding:var(--padding-16xl) 0;box-sizing:border-box}
+
+.ntt,.title{position:relative}
+.title{align-self:stretch;height:32px;overflow:hidden;flex-shrink:0;font-size:var(--card-heading-size)}
+.ntt{line-height:16px}
+.new,.tags{overflow:hidden;display:flex;flex-direction:row;align-items:flex-start;justify-content:flex-start}
+.new{border-radius:var(--br-8xs);background-color:var(--color-lightgray);padding:var(--padding-8xs)}
+.tags{align-self:stretch;height:26px;flex-shrink:0;gap:var(--gap-3xs)}
+.kr{position:absolute;top:0;left:3px;line-height:24px;display:inline-block;width:289px;height:21px}
+.price{align-self:stretch;position:relative;height:24px;overflow:hidden;flex-shrink:0;font-size:var(--body-size)}
+.button1,.product-card{border-radius:var(--br-8xs);overflow:hidden;display:flex;align-items:center;justify-content:space-between}
+.button1{align-self:stretch;background-color:var(--color-gray-100);border:1px solid var(--color-dimgray);flex-direction:row;padding:var(--padding-3xs) var(--padding-mini);color:var(--black-coffee)}
+.product-card{background-color:var(--color-white);width:330px;height:360px;flex-shrink:0;flex-direction:column;padding:var(--padding-mini);box-sizing:border-box}
+.markus-spiske-iar-afb0qqw-unsp-icon2{position:relative;width:383px;height:256px;object-fit:cover}
+.tengdar-vrur{position:absolute;top:30px;left:15px;font-size:var(--secondary-heading-size);line-height:48px;display:inline-block;width:776px;height:43px}
+
+
+
+
+.Tengdar-Vorur {
+  background-color: #e1cec2;
+  display: flex;
+  flex-wrap: wrap; /* Wrap the boxes to the next row if needed */
+  justify-content: left; /* Horizontally center the boxes */
+  align-items: center; /* Align boxes to the top */
+  text-align: center;
+}
+
+.product-box {
+  border: 2px solid #000; /* Border color and thickness */
+  border-radius: 5px; /* Add border radius to the box */
+  padding: 10px; /* Padding to adjust the box size */
+  margin: 10px; /* Add margin between boxes */
+  background-color: #fff; /* Background color for the boxes */
+  width: calc(20% - 10px);
+}
+
+
+.Tengdar-Head {
+  background-color: #e1cec2; /* Add the desired background color */
+  text-align: Left;
+  padding: 20px; /* Adjust the padding as needed */
+}
+
+.Tengdar-Head h2 {
+  margin: 0;
+}
+
+
+
+
+
+
 
 
 
