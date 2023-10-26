@@ -1,10 +1,32 @@
 
-  # hopverkefni
+  # hopverkefni 1
 
-  Note: Please ensure you have installed <code><a href="https://nodejs.org/en/download/">nodejs</a></code>
+Til að skoða og keyra verkefnið á tækinu þínu:
 
-  To preview and run the project on your device:
-  1) Open project folder in <a href="https://code.visualstudio.com/download">Visual Studio Code</a>
-  2) In the terminal, run `npm install`
-  3) Run `npm start` to view project in browser
+1) opna terminal í vscode
+2) Í terminal skaltu keyra `npm install`
+3) Keyrðu `npm start` til að skoða verkefnið í vafra
+
+
+  # Hópmeðlimir
+  nafn.....................email.........github
+  Patrekur Orri Guðjónsson - pog5@hi.is - Orrinnn
+  Aron Bjartur Hilmarsson - abh41@hi.is - aronbjartur
+  Tómas Andri Bjartsson - tab9@hi.is - tomasandri99
+  Alexander Knudsen - aok12@hi.is - Alexander-Knudsen
+  
+  # Uppbygging
+
+  við notuðum bara css og settum það allt í eitt skjal. Mest megnið af því er vel lýst og það kemur fram hvar hver classi fer. Notuðum root sem var í fyrri verkefni og bættum við þegar okkur fannst þess þurfa. 
+  Við notuðum Chatgbt til að hjálpa okkur bæði í html og css
+
+  Skiptum þessu upp eins og við erum búinn að vera að læra, þannig að index.html og styles.css eru í upphafsöppunni og svo eru .image mappa með öllum myndum og vectors og .sites mappa með öllum síðum
+
+  Til að flakka milli síða:
+
+  Vorulisit: alltaf upp í headernum og á forsíðu eru tveir takkar sem taka mann þangað
+  Pontunarsida: alltaf í headernum með því að ýta á cart iconið
+  Varadesktop: með því að nota takkana sem eru sem kallast "setja í körfu"
+  Forsíða: alltaf upp í header í title-inu
+
   
