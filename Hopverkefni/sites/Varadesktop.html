@@ -1,70 +1,64 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="initial-scale=1, width=device-width" />
-
-    <link rel="stylesheet" href="../styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap"
-    />
-  </head>
-  <body>
-    
-    <div class="varadesktop">
-      <header>
-        <div class="header-content">
-          <img src="../image/logo.svg" alt="Pontunarsida Logo">
-          <h1>Tæknibúðin</h1>
-        </div>
-        <div class="search-bar">
-          <input type="text" placeholder="Leit eftir heiti, vörunúmeri, lýsingu o.fl." class="search-input">
-        </div>
-        <nav>
-            <ul>
-              <li><a href="#">Nýjar vörur</a></li>
-              <li><a href="#">Tilboðs vörur</a></li>
-              <li><a href="#">Allar vörur</a></li>
-            </ul>
-          </nav>
-        <div id="mobile-menu" class="hidden">
-            <ul>
-                <li><a href="#">Nýjar vörur</a></li>
-                <li><a href="#">Tilboðs vörur</a></li>
-                <li><a href="#">Allar vörur</a></li>
-              </ul>          
-          <div class="search-bar2.0">
-            <input type="text" placeholder="Leit eftir heiti, vörunúmeri, lýsingu o.fl." class="search-input">
-          </div>
-        </div>
-        <div class="header-cart">
+<html lang="is">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+     <header>
+    <div class="header-content">
+      <img src="../image/logo.svg" alt="Pontunarsida Logo">
+      <h1>Tæknibúðin</h1>
+    </div>
+    <div class="search-bar">
+      <input type="text" placeholder="Leit eftir heiti, vörunúmeri, lýsingu o.fl." class="search-input">
+    </div>
+    <nav>
+        <ul>
+          <li><a href="Vorulisti.html">Nýjar vörur</a></li>
+          <li><a href="Vorulisti.html">Tilboðs vörur</a></li>
+          <li><a href="Vorulisti.html">Allar vörur</a></li>
+        </ul>
+      </nav>
+    <div id="mobile-menu" class="hidden">
+        <ul>
+            <li><a href="Vorulisti.html">Nýjar vörur</a></li>
+            <li><a href="Vorulisti.html">Tilboðs vörur</a></li>
+            <li><a href="Vorulisti.html">Allar vörur</a></li>
+          </ul>          
+      <div class="search-bar2.0">
+        <input type="text" placeholder="Leit eftir heiti, vörunúmeri, lýsingu o.fl." class="search-input">
+      </div>
+    </div>
+    <div class="header-cart">
+        <a href="pontunarsida.html">
           <img src="../image/karfa.svg" alt="Pontunarsida Logo">
-        </div>
-        <button id="mobile-menu-button">☰</button> <!-- Button to toggle the mobile menu -->
-      </header>
+        </a>
+      </div>
+    <button id="mobile-menu-button">☰</button> <!-- Button to toggle the mobile menu -->
+  </header>
 
-      <script>
-        // Get references to the button and the mobile menu
-    const mobileMenuButton = document.getElementById("mobile-menu-button");
-    const mobileMenu = document.getElementById("mobile-menu");
-    
-    // Add a click event listener to the button
-    mobileMenuButton.addEventListener("click", function() {
-      // Check if the mobile menu is currently visible
-      if (mobileMenu.classList.contains("visible")) {
-        // If it's visible, hide it by removing the "visible" class
-        mobileMenu.classList.remove("visible");
-      } else {
-        // If it's not visible, show it by adding the "visible" class
-        mobileMenu.classList.add("visible");
-      }
-    });
-      </script>
+  <script>
+    // Get references to the button and the mobile menu
+const mobileMenuButton = document.getElementById("mobile-menu-button");
+const mobileMenu = document.getElementById("mobile-menu");
+
+// Add a click event listener to the button
+mobileMenuButton.addEventListener("click", function() {
+  // Check if the mobile menu is currently visible
+  if (mobileMenu.classList.contains("visible")) {
+    // If it's visible, hide it by removing the "visible" class
+    mobileMenu.classList.remove("visible");
+  } else {
+    // If it's not visible, show it by adding the "visible" class
+    mobileMenu.classList.add("visible");
+  }
+});
+  </script>
 
       <div class="page-content2">
         <div class="product-content">
@@ -148,67 +142,32 @@
             </p>
           </div>
         </div>
-        <div class="related-products">
-          <img class="background-icon3" alt="" src="../image/background2.svg" />
 
-          <div class="products-content">
-            <div class="products3">
-              <div class="product-card">
-                <div class="product-image">
-                  <img
-                    class="alex-knight-2ejcsulrwc8-unspla-icon5"
-                    alt=""
-                    src="../image/Robot.png"
-                  />
-                </div>
-                <div class="title">
-                  <div class="vinalegur-vinnurbot">Vinalegur vinnuróbot</div>
-                </div>
-                <div class="tags">
-                  <div class="new">
-                    <div class="ntt">Nýtt</div>
-                  </div>
-                  <div class="new">
-                    <div class="ntt">Ekki fyrir börn</div>
-                  </div>
-                </div>
-                <div class="price">
-                  <div class="kr">
-                    <p class="opi-alla-virka">1.499.990 kr.</p>
-                  </div>
-                </div>
-                <a class="button1" href="./Pontunarsida.html">SETJA Í KÖRFU</a>
-              </div>
-              <div class="product-card">
-                <div class="product-image">
-                  <img
-                    class="markus-spiske-iar-afb0qqw-unsp-icon2"
-                    alt=""
-                    src="../image/Code.png"
-                  />
-                </div>
-                <div class="title">
-                  <div class="vinalegur-vinnurbot5">Matrixið</div>
-                </div>
-                <div class="tags">
-                  <div class="new">
-                    <div class="ntt">Nýtt</div>
-                  </div>
-                  <div class="new">
-                    <div class="ntt">Ekki fyrir róbóta</div>
-                  </div>
-                </div>
-                <div class="price">
-                  <div class="kr">
-                    <p class="opi-alla-virka">299.999.999.499.990 kr.</p>
-                  </div>
-                </div>
-                <a class="button1" href="./Pontunarsida.html">SETJA Í KÖRFU</a>
-              </div>
-            </div>
-          </div>
-          <div class="tengdar-vrur">Tengdar vörur</div>
-        </div>
+        <div class="Tengdar-Head">
+          <h2>Tengdar vörur</h1>
+          <div>
+
+        <div class="Tengdar-Vorur">
+          <!-- Product box 1 -->
+      <div class="product-box">
+        <img src="../image/Robot.png" alt="Vara Image">
+        <h3>Vinalegur vinnuróbot</h3>
+        <button>Nýtt</button>
+        <button>Ekki fyrir börn</button>
+        <p>1.499.990 kr.</p>
+        <button class="setja-i-korfu-button">Setja í körfu</button>
+      </div>
+
+          <!-- Product box 2 -->
+      <div class="product-box">
+        <img src="../image/Code.png" alt="Vara Image">
+        <h3>Matrixið</h3>
+        <button>Nýtt</button>
+        <button>Ekki fyrir róbota</button>
+        <p>299.999.999.499.990 kr.</p>
+        <button class="setja-i-korfu-button">Setja í körfu</button>
+      </div>
+        </div> 
 
 
         
