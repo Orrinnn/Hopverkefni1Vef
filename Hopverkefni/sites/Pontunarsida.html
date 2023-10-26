@@ -1,120 +1,195 @@
 <!DOCTYPE html>
-<html>
+<html lang="is">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale=1, width=device-width">
-    <link rel="stylesheet" href="../styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1 class="Pontunarsida">Pöntunarsíða</h1>
-    <div class="container">
-        <div class="page-content">
-            <h2 class="kaupandi">Kaupandi</h2>
-            <div class="form">
-                <div class="shipping">
-                    <h2 class="kaupandi">Afhending</h2>
-                    <div class="inputs">
-                        <div class="left">
-                            <div class="input">
-                                <p class="text">Nafn</p>
-                                <div class="input-field"></div>
-                            </div>
-                            <div class="input">
-                                <p class="text">Netfang</p>
-                                <div class="input-field"></div>
-                            </div>
-                        </div>
-                        <div class="left">
-                            <div class="input">
-                                <p class="text">Kennitala</p>
-                                <div class="input-field"></div>
-                            </div>
-                            <div class="input">
-                                <p class="text">Sími</p>
-                                <div class="input-field"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="shipping">
-                    <div class="inputs">
-                        <div class="left">
-                            <div class="input">
-                                <p class="text">Heimilisfang</p>
-                                <div class="input-field"></div>
-                            </div>
-                            <div class="input">
-                                <p class="text">Staður</p>
-                                <div class="input-field"></div>
-                            </div>
-                        </div>
-                        <div class="left">
-                            <div class="input">
-                                <p class="text">Póstnúmer</p>
-                                <div class="input-field"></div>
-                            </div>
-                            <div class="input">
-                                <p class="text">Athugasemd</p>
-                                <div class="input-field"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="karfa">
-                <div class="products">
-                    <div class="product">
-                        <div class="product-image">
-                            <img class="image" alt="" src="../public/alexknight2ejcsulrwc8unsplash-11@2x.png">
-                        </div>
-                        <h2 class="title">Vinalegur vinnuróbot</h2>
-                        <p class="price">1.499.990 kr.</p>
-                    </div>
-                    <hr class="line">
-                    <div class="product">
-                        <div class="product-image">
-                            <img class="image" alt="" src="../public/alexandredebievefo7jilwjotuunsplash-11@2x.png">
-                        </div>
-                        <h2 class="title">Tæknilegt móðurborð</h2>
-                        <p class="price">189.000 kr.</p>
-                    </div>
-                    <div class="total">
-                        <p class="total-text">Samtals</p>
-                        <p class="total-price">1.688.990 kr.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="order">
-                <h2 class="button">SENDA PÖNTUN</h2>
-            </div>
-        </div>
-        <div class="footer">
-            <div class="opening-hours">
-                <hr class="divider">
-                <h2 class="opnunartimi">OPNUNARTÍMI</h2>
-                <p class="opening-hours-text">Opið alla virka daga frá 9:00–18:00</p>
-                <p class="opening-hours-text">Opið á laugardögum frá 12:00–16:00</p>
-                <p class="opening-hours-text">Lokað á sunnudögum</p>
-            </div>
-            <div class="contact">
-                <hr class="divider">
-                <h2 class="hafu-samband">HAFÐU SAMBAND</h2>
-                <p class="contact-text">Skiptiborð: 234–4568</p>
-                <p class="contact-text">Tölvupóstur: thjonusta@example.org</p>
-            </div>
-            <div class="other">
-                <hr class="divider">
-                <h2 class="annað">ANNAÐ</h2>
-                <p class="other-text">Rekja sendingu</p>
-                <p class="other-text">Skilaréttur</p>
-                <p class="other-text">Um okkur</p>
-                <p class="other-text">Störf</p>
-            </div>
-            <div class="copyright">
-                <hr class="divider">
-                <p class="copyright-text">© 2021 TÆKNIBÚÐIN — Allur réttur áskilinn</p>
-            </div>
-        </div>
+     <header>
+    <div class="header-content">
+      <img src="../image/logo.svg" alt="Pontunarsida Logo">
+      <h1>Tæknibúðin</h1>
     </div>
+    <div class="search-bar">
+      <input type="text" placeholder="Leit eftir heiti, vörunúmeri, lýsingu o.fl." class="search-input">
+    </div>
+    <nav>
+        <ul>
+          <li><a href="#">Nýjar vörur</a></li>
+          <li><a href="#">Tilboðs vörur</a></li>
+          <li><a href="#">Allar vörur</a></li>
+        </ul>
+      </nav>
+    <div id="mobile-menu" class="hidden">
+        <ul>
+            <li><a href="#">Nýjar vörur</a></li>
+            <li><a href="#">Tilboðs vörur</a></li>
+            <li><a href="#">Allar vörur</a></li>
+          </ul>          
+      <div class="search-bar2.0">
+        <input type="text" placeholder="Leit eftir heiti, vörunúmeri, lýsingu o.fl." class="search-input">
+      </div>
+    </div>
+    <div class="header-cart">
+      <img src="../image/karfa.svg" alt="Pontunarsida Logo">
+    </div>
+    <button id="mobile-menu-button">☰</button> <!-- Button to toggle the mobile menu -->
+  </header>
+
+  <script>
+    // Get references to the button and the mobile menu
+const mobileMenuButton = document.getElementById("mobile-menu-button");
+const mobileMenu = document.getElementById("mobile-menu");
+
+// Add a click event listener to the button
+mobileMenuButton.addEventListener("click", function() {
+  // Check if the mobile menu is currently visible
+  if (mobileMenu.classList.contains("visible")) {
+    // If it's visible, hide it by removing the "visible" class
+    mobileMenu.classList.remove("visible");
+  } else {
+    // If it's not visible, show it by adding the "visible" class
+    mobileMenu.classList.add("visible");
+  }
+});
+  </script>
+
+<div class="Pontun">
+    <h1>Pöntun</h1>
+</div>
+
+<main class="pontunarsida" id="efni">
+    <form method="post" action="." class="boxes">
+        <div class="box-container">
+            <div class="box">
+                <h2>Kaupandi</h2>
+                <div class="box-content">
+                  <div class="box-left">
+                    <label for="firstName">Nafn</label>
+                    <input type="text" id="firstName" name="firstName">
+                    <label for="email">Netfang</label>
+                    <input type="email" id="email" name="email">
+                  </div>
+                  <div class="box-right">
+                    <label for="lastName">Kennitala</label>
+                    <input type="text" id="lastName" name="lastName">
+                    <label for="phone">Sími</label>
+                    <input type="tel" id="phone" name="phone">
+                  </div>
+                </div>
+              </div>
+
+
+
+              <div class="box">
+                <div class="karfa">
+                    <div class="products">
+                        <div class="product">
+                            <div class="product-image">
+                                <img class="image" alt="" src="../image/Robot.png">
+                            </div>
+                            <h2 class="title">Vinalegur vinnuróbot</h2>
+                            <h2 class="price" style="text-align: right;">1.499.990 kr.</h2>
+                        </div>
+                        <hr class="line">
+                        <div class="product">
+                            <div class="product-image">
+                                <img class="image" alt="" src="../image/Bord.png">
+                            </div>
+                            <h2 class="title">Tæknilegt móðurborð</h2>
+                            <h2 class="price" style="text-align: right;">189.000 kr.</h2>
+                        </div>
+                        <div class="total">
+                            <p class="total-text">Samtals</p>
+                            <p class="total-price">1.688.990 kr.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+            
+            <div class="box">
+                <h2>Afhending</h2>
+                <div class="box-content">
+                  <div class="box-left">
+                    <label for="firstName">Heimilisfang</label>
+                    <input type="text" id="firstName" name="firstName">
+                    <label for="lastName">Staður</label>
+                    <input type="text" id="lastName" name="lastName">
+                  </div>
+                  <div class="box-right">
+                    <label for="email">Póstnúmer</label>
+                    <input type="text" id="phone" name="phone">
+                    <label for="phone">Athugarsemd</label>
+                    <input type="text" id="email" name="email">
+                  </div>
+                </div>
+              </div>
+              
+            
+            
+            
+            
+            
+              <div class="box"></div>   <!-- Box 4 -->
+
+
+
+        </div>
+
+
+
+      <div class="button">
+        <a href="">SENDA PÖNTUN</a>
+      </div>
+    </form>
+  </main>
+  
+  
+  
+
+
+
+<footer class="footer">
+    <div class="footer">
+        <div class="footer-content">
+          <div class="footer-column">
+            <h3>OPNUNARTÍMI</h3>
+            <p>Opið alla virka daga frá 9:00–18:00</p>
+            <p>Opið á laugardögum frá 12:00–16:00</p>
+            <p>Lokað á sunnudögum</p>
+          </div>
+          <div class="footer-column">
+            <h3>HAFÐU SAMBAND</h3>
+            <p>Skiptiborð: 234–4568</p>
+            <p>Tölvupóstur: thjonusta@example.org</p>
+          </div>
+          <div class="footer-column">
+            <h3>ANNAÐ</h3>
+            <p>Rekja sendingu</p>
+            <p>Skilaréttur</p>
+            <p>Um okkur</p>
+            <p>Störf</p>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <p>&copy; 2023 TÆKNIBÚÐIN — Allur réttur áskilinn</p>
+        </div>
+      </div>      
+  </footer>
+
+
+
+
+
+
+
+
 </body>
 </html>
