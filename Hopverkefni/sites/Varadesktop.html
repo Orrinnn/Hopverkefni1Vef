@@ -15,14 +15,64 @@
     />
   </head>
   <body>
+    
     <div class="varadesktop">
+      <header>
+        <div class="header-content">
+          <img src="../image/logo.svg" alt="Pontunarsida Logo">
+          <h1>Tæknibúðin</h1>
+        </div>
+        <div class="search-bar">
+          <input type="text" placeholder="Leit eftir heiti, vörunúmeri, lýsingu o.fl." class="search-input">
+        </div>
+        <nav>
+            <ul>
+              <li><a href="#">Nýjar vörur</a></li>
+              <li><a href="#">Tilboðs vörur</a></li>
+              <li><a href="#">Allar vörur</a></li>
+            </ul>
+          </nav>
+        <div id="mobile-menu" class="hidden">
+            <ul>
+                <li><a href="#">Nýjar vörur</a></li>
+                <li><a href="#">Tilboðs vörur</a></li>
+                <li><a href="#">Allar vörur</a></li>
+              </ul>          
+          <div class="search-bar2.0">
+            <input type="text" placeholder="Leit eftir heiti, vörunúmeri, lýsingu o.fl." class="search-input">
+          </div>
+        </div>
+        <div class="header-cart">
+          <img src="../image/karfa.svg" alt="Pontunarsida Logo">
+        </div>
+        <button id="mobile-menu-button">☰</button> <!-- Button to toggle the mobile menu -->
+      </header>
+
+      <script>
+        // Get references to the button and the mobile menu
+    const mobileMenuButton = document.getElementById("mobile-menu-button");
+    const mobileMenu = document.getElementById("mobile-menu");
+    
+    // Add a click event listener to the button
+    mobileMenuButton.addEventListener("click", function() {
+      // Check if the mobile menu is currently visible
+      if (mobileMenu.classList.contains("visible")) {
+        // If it's visible, hide it by removing the "visible" class
+        mobileMenu.classList.remove("visible");
+      } else {
+        // If it's not visible, show it by adding the "visible" class
+        mobileMenu.classList.add("visible");
+      }
+    });
+      </script>
+
       <div class="page-content2">
         <div class="product-content">
           <div class="tknilegt-murbor5">Tæknilegt móðurborð</div>
           <img
             class="alexandre-debieve-fo7jilwjotu-icon3"
             alt=""
-            src="./public/alexandredebievefo7jilwjotuunsplash-12@2x.png"
+            src="../image/Bord.png"
           />
 
           <div class="tags8">
@@ -43,33 +93,28 @@
             luctus porta nec sed ante. Nam quis ex quis dolor auctor vehicula.
           </div>
           <div class="price8">
-            <b class="kr19">
-              <p class="blank-line">189.000 kr.</p>
+            <b class="kr19">189.000 kr.</b>
             </b>
           </div>
-          <div class="button11">
-            <b class="ntt8">SETJA Í KÖRFU</b>
-          </div>
+          <a class="button11" href="./Pontunarsida.html">SETJA Í KÖRFU</a>
         </div>
         <div class="product-details">
           <div class="eiginleikar-kubbasett-a1234-ku-container">
             <p class="eiginleikar">
-              <span class="kubbasett">
+              <span class="kubbasett"> 
                 <b>Eiginleikar</b>
               </span>
             </p>
-            <p class="blank-line">
-              <span class="kubbasett">
+            <span class="kubbasett">kubbasett</span>  
                 <span>
-                  <span>&nbsp;</span>
+  
                 </span>
               </span>
             </p>
             <p class="kubbasett-a1234-kubbasett-fyri">
               <span class="kubbasett">
                 <span>
-                  <span>Kubbasett</span>
-                  <b class="blank-line2">&nbsp;</b>
+                  
                 </span>
               </span>
               <span>
@@ -82,26 +127,16 @@
                 >
               </span>
             </p>
-            <p class="blank-line">
-              <span>
-                <span class="kubbasett">Stærð</span>
-              </span>
+            <span class="kubbasett">Stærð</span>             
             </p>
             <p class="kubbasett-a1234-kubbasett-fyri">
               <span>
                 <span class="a1234-kubbasett-fyrir">1234x4567.</span>
               </span>
             </p>
-            <p class="blank-line">
-              <span>
-                <span class="a1234-kubbasett-fyrir">&nbsp;</span>
-              </span>
+            <span class="a1234-kubbasett-fyrir"></span>             
             </p>
-            <p class="blank-line">
-              <span>
-                <span class="kubbasett">Stýringar</span>
-              </span>
-            </p>
+            <span class="kubbasett">Stýringar</span>              
             <p class="mjg-gar-murborslegar">
               Mjög góðar móðurborðslegar stýringar. Praesent mauris nulla,
               pretium sit amet tempor vel, ullamcorper at lectus. Cras vel
@@ -114,132 +149,96 @@
           </div>
         </div>
         <div class="related-products">
-          <img class="background-icon3" alt="" src="./public/background2.svg" />
+          <img class="background-icon3" alt="" src="../image/background2.svg" />
 
           <div class="products-content">
             <div class="products3">
-              <div class="product-card8">
-                <div class="product-image10">
+              <div class="product-card">
+                <div class="product-image">
                   <img
                     class="alex-knight-2ejcsulrwc8-unspla-icon5"
                     alt=""
-                    src="./public/alexknight2ejcsulrwc8unsplash-1@2x.png"
+                    src="../image/Robot.png"
                   />
                 </div>
-                <div class="title12">
-                  <div class="vinalegur-vinnurbot5">Vinalegur vinnuróbot</div>
+                <div class="title">
+                  <div class="vinalegur-vinnurbot">Vinalegur vinnuróbot</div>
                 </div>
-                <div class="tags9">
-                  <div class="new16">
-                    <div class="ntt9">Nýtt</div>
+                <div class="tags">
+                  <div class="new">
+                    <div class="ntt">Nýtt</div>
                   </div>
-                  <div class="new16">
-                    <div class="ntt9">Ekki fyrir börn</div>
-                  </div>
-                </div>
-                <div class="price9">
-                  <div class="kr21">
-                    <p class="blank-line">1.499.990 kr.</p>
+                  <div class="new">
+                    <div class="ntt">Ekki fyrir börn</div>
                   </div>
                 </div>
-                <div class="button12">
-                  <b class="ntt8">SETJA Í KÖRFU</b>
+                <div class="price">
+                  <div class="kr">
+                    <p class="opi-alla-virka">1.499.990 kr.</p>
+                  </div>
                 </div>
+                <a class="button1" href="./Pontunarsida.html">SETJA Í KÖRFU</a>
               </div>
-              <div class="product-card8">
-                <div class="product-image10">
+              <div class="product-card">
+                <div class="product-image">
                   <img
                     class="markus-spiske-iar-afb0qqw-unsp-icon2"
                     alt=""
-                    src="./public/markusspiskeiarafb0qqwunsplash-1@2x.png"
+                    src="../image/Code.png"
                   />
                 </div>
-                <div class="title12">
+                <div class="title">
                   <div class="vinalegur-vinnurbot5">Matrixið</div>
                 </div>
-                <div class="tags9">
-                  <div class="new16">
-                    <div class="ntt9">Nýtt</div>
+                <div class="tags">
+                  <div class="new">
+                    <div class="ntt">Nýtt</div>
                   </div>
-                  <div class="new16">
-                    <div class="ntt9">Ekki fyrir róbóta</div>
-                  </div>
-                </div>
-                <div class="price9">
-                  <div class="kr21">
-                    <p class="blank-line">299.999.999.499.990 kr.</p>
+                  <div class="new">
+                    <div class="ntt">Ekki fyrir róbóta</div>
                   </div>
                 </div>
-                <div class="button12">
-                  <b class="ntt8">SETJA Í KÖRFU</b>
+                <div class="price">
+                  <div class="kr">
+                    <p class="opi-alla-virka">299.999.999.499.990 kr.</p>
+                  </div>
                 </div>
+                <a class="button1" href="./Pontunarsida.html">SETJA Í KÖRFU</a>
               </div>
             </div>
           </div>
           <div class="tengdar-vrur">Tengdar vörur</div>
         </div>
-        <div class="footer2">
-          <div class="opening-hours2">
-            <div class="opening-hours-inner"></div>
-            <div class="opnunartmi2">OPNUNARTÍMI</div>
-            <div class="text16">
-              <p class="blank-line">Opið alla virka daga frá 9:00–18:00</p>
-              <p class="blank-line">Opið á laugardögum frá 12:00–16:00</p>
-              <p class="blank-line">Lokað á sunnudögum</p>
-            </div>
-          </div>
-          <div class="contact2">
-            <div class="opening-hours-inner"></div>
-            <div class="hafu-samband2">HAFÐU SAMBAND</div>
-            <div class="text16">
-              <p class="blank-line">Skiptiborð: 234–4568</p>
-              <p class="blank-line">Tölvupóstur: thjonusta@example.org</p>
-            </div>
-          </div>
-          <div class="other2">
-            <div class="opening-hours-inner"></div>
-            <div class="opnunartmi2">ANNAÐ</div>
-            <div class="text16">
-              <p class="blank-line">Rekja sendingu</p>
-              <p class="blank-line">Skilaréttur</p>
-              <p class="blank-line">Um okkur</p>
-              <p class="blank-line">Störf</p>
-            </div>
-          </div>
-          <div class="copyright2">
-            <div class="copyright-inner"></div>
-            <div class="tknibin-allur2">
-              © 2021 TÆKNIBÚÐIN — Allur réttur áskilinn
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="navigation2">
-        <div class="logo-container2">
-          <img class="logo-icon2" alt="" src="./public/logo.svg" />
 
-          <b class="tknibin2">Tæknibúðin</b>
-        </div>
-        <div class="search2">
-          <div class="search-input1"></div>
-          <img class="vector-icon2" alt="" src="./public/vector.svg" />
 
-          <div class="leit-eftir-heiti2">
-            Leit eftir heiti, vörunúmeri, lýsingu o.fl.
-          </div>
-        </div>
-        <div class="cart2">
-          <img class="cart-icon2" alt="" src="./public/cart-icon.svg" />
-
-          <div class="cart-count-background2"></div>
-          <div class="div2">1</div>
-        </div>
-        <div class="categories2">
-          <div class="ntt8">Nýjar vörur</div>
-          <div class="ntt8">Tilboðs vörur</div>
-          <div class="ntt8">Allar vörur</div>
-        </div>
-      </div>
+        
+        <footer class="footer">
+          <div class="footer">
+              <div class="footer-content">
+                <div class="footer-column">
+                  <h3>OPNUNARTÍMI</h3>
+                  <p>Opið alla virka daga frá 9:00–18:00</p>
+                  <p>Opið á laugardögum frá 12:00–16:00</p>
+                  <p>Lokað á sunnudögum</p>
+                </div>
+                <div class="footer-column">
+                  <h3>HAFÐU SAMBAND</h3>
+                  <p>Skiptiborð: 234–4568</p>
+                  <p>Tölvupóstur: thjonusta@example.org</p>
+                </div>
+                <div class="footer-column">
+                  <h3>ANNAÐ</h3>
+                  <p>Rekja sendingu</p>
+                  <p>Skilaréttur</p>
+                  <p>Um okkur</p>
+                  <p>Störf</p>
+                </div>
+              </div>
+              <div class="footer-copyright">
+                <p>&copy; 2023 TÆKNIBÚÐIN — Allur réttur áskilinn</p>
+              </div>
+            </div>      
+        </footer>
     </div>
   </body>
 </html>
