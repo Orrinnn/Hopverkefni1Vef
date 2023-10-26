@@ -94,8 +94,6 @@ form button {
 
 
 
-
-
 /* HEADER!!!! */
 header {
   background-color: var(--color-white);
@@ -154,17 +152,19 @@ nav ul li:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 50%;
 }
 
 /* Style the search input field */
 .search-input {
-  width: 80%; /* Adjust the width as needed */
-  padding: 20px; /* Increase padding for a bigger search bar */
+  width: 80%; 
+  padding: 20px; 
   background-image: url('../image/leit.svg');
   background-size: 20px;
   background-position: right center;
   background-position-x: calc(100% - 5px);
   background-repeat: no-repeat;
+  border-radius: 5px;
 }
 
 .search-bar2.0 {
@@ -244,13 +244,10 @@ nav ul li:hover {
     align-items: center;
   }
   /* Display the mobile menu when the button is clicked */
-#mobile-menu.visible {
+    #mobile-menu.visible {
   display: block;
+  }
 }
-}
-
-
-
 
 
 
@@ -297,3 +294,137 @@ nav ul li:hover {
     text-align: left;
   }
 }
+
+
+
+/* PÖNTUNARSÍÐA */
+
+/* FYRIRSÖGNIN */
+
+.Pontun h1 {
+  padding-left: 50px;
+  font-weight: lighter;
+  font-size:3em ;
+}
+
+/* BOXIN */
+.box-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 20px;
+}
+
+.box {
+  flex: 1;
+  min-width: 45%;
+  height: 300px;
+  margin: 10px;
+  box-sizing: border-box;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.box-content {
+  display: flex;
+  flex: 1;
+}
+
+.box-left, .box-right {
+  flex: 1;
+}
+
+.box label {
+  font-weight: bold;
+}
+
+.box input {
+  width: 85%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border-radius: 5px; /* Add border radius to input fields */
+}
+
+
+/* TAKKINN */
+
+.button {
+  background-color: var(--color-sienna); /* Brown background color */
+  border: 2px solid #000; /* Black border */
+  border-radius: 5px;
+  display: inline-block; /* Ensure the button is displayed as a block element */
+  padding: 10px 20px;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-left: 50px;
+}
+
+.button a {
+  color: #fff; /* White font color */
+  text-decoration: none;
+}
+
+
+/* KARFAN */
+
+/* Style for the "karfa" section */
+.box .karfa {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style for the "products" container */
+.box .karfa .products {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.box .karfa .product {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.box .karfa .products .product {
+  width: 100%;
+}
+
+.box .karfa .product .title {
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+.box .karfa .line {
+  border: 1px solid #333; 
+  margin: 10px 0;
+}
+
+.box .karfa .total {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  border-top: 1px solid #333; 
+}
+
+.box .karfa .product .product-image {
+  margin-right: 20px; 
+}
+
+.box .karfa .image {
+  align-items: left;
+  width: 80px; 
+}
+
+.box .karfa .product .price {
+  margin-left: 220px; /* Adjust the margin as needed */
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+
+
